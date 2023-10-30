@@ -1,12 +1,12 @@
 /********************************************************************************
- *  WEB322 – Assignment 02
+ *  WEB322 – Assignment 03
  *
  *  I declare that this assignment is my own work in accordance with Seneca's
  *  Academic Integrity Policy:
  *
  *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
  *
- *  Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 29/09/2023
+ *  Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 30/10/2023
  ********************************************************************************/
 const legoData = require("./modules/legoSets");
 const express = require("express");
@@ -51,9 +51,9 @@ app.get("/lego/sets", (req, res) => {
   }
 });
 app.get("/lego/sets/:setNum", (req, res) => {
-  const setNum = req.params.setNum;
+  const number = req.params.setNum;
   legoData
-    .getSetByNum(setNum)
+    .getSetByNum(number)
     .then((data) => {
       if (data) {
         res.json(data);
