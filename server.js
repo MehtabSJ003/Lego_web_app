@@ -8,6 +8,29 @@
  *
  *  Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 13/12/2023
  ********************************************************************************/
+/********************************************************************************
+
+* WEB322 – Assignment 04
+
+*
+
+* I declare that this assignment is my own work in accordance with Seneca's
+
+* Academic Integrity Policy:
+
+*
+
+* https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
+
+*
+
+* Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 13/12/2023
+
+*
+
+* Published URL: https://cooperative-bull-flip-flops.cyclic.app/
+
+********************************************************************************/
 const legoData = require("./modules/legoSets");
 const express = require("express");
 const path = require("path");
@@ -15,7 +38,6 @@ const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-
 app.get("/", (req, res) => {
   res.render("home");
 });

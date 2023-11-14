@@ -30,10 +30,8 @@
           <span class="font-bold">Year Released: </span><%= set.year %><br />
           <span class="font-bold">Theme: </span> <%= set.theme %> <br />
           <span class="font-bold">Number of Parts: </span><%= set.num_parts %><br /><br />
-  
           <span id="quote">
             <script>
-                
                 document.addEventListener("DOMContentLoaded", async () => {
     try {
       const response = await fetch("https://quotable.io/random");
