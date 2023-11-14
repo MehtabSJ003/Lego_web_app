@@ -6,7 +6,7 @@
  *
  *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
  *
- *  Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 30/10/2023
+ *  Name: MEHTAB SINGH JAGDE Student ID: 119003226 Date: 13/12/2023
  ********************************************************************************/
 const legoData = require("./modules/legoSets");
 const express = require("express");
@@ -15,9 +15,7 @@ const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-legoData.initialize().then(() => {
-  app.listen(HTTP_PORT, () => console.log(`server listening on: ${HTTP_PORT}`));
-});
+
 app.get("/", (req, res) => {
   res.render("home");
 });
@@ -83,4 +81,7 @@ app.get("/lego/sets/:setNum", (req, res) => {
         message: "I'm sorry, we're unable to find what you're looking for",
       });
     });
+});
+legoData.initialize().then(() => {
+  app.listen(HTTP_PORT, () => console.log(`server listening on: ${HTTP_PORT}`));
 });

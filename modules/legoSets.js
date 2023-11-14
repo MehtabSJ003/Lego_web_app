@@ -2,7 +2,7 @@ const setData = require("../data/setData");
 const themeData = require("../data/themeData");
 let sets = [];
 function initialize() {
-  return new Promise((resove, reject) => {
+  return new Promise((resolve, reject) => {
     setData.forEach((elementOfSet) => {
       const themeInfo = themeData.find(
         (theme) => theme.id === elementOfSet.theme_id
@@ -10,6 +10,7 @@ function initialize() {
       if (themeInfo) {
         elementOfSet.theme = themeInfo.name;
         sets.push(elementOfSet);
+        resolve();
       }
     });
   });
