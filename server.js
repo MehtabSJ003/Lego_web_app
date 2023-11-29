@@ -123,7 +123,7 @@ app.post("/lego/addSet", (req, res) => {
     })
     .catch((error) => {
       res.render("500", {
-        message: `I'm sorry, but we have encountered the following error: ${error.message}`,
+        message: `I'm Sorry, but we have encountered the following error: ${error.message}`,
       });
     });
 });
