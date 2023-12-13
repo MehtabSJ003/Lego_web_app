@@ -2674,7 +2674,10 @@ html {
   display: flex;
   justify-content: space-between;
 }
-
+.btn-error {
+  margin-top: 20px;
+  width: 1248px;
+}
 .table {
   display: table;
 }
