@@ -2675,8 +2675,8 @@ html {
   justify-content: space-between;
 }
 .btn-error {
+  display: flex;
   margin-top: 20px;
-  width: 1248px;
 }
 .table {
   display: table;
