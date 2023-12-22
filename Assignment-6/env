@@ -1,5 +1,0 @@
-DB_USER="MehtabSJ003"
-DB_DATABASE="SenecaDB"
-DB_PASSWORD="AYNDb8fkXg3U"
-DB_HOST="ep-noisy-butterfly-19134185-pooler.us-east-2.aws.neon.tech"
-MONGODB="mongodb+srv://mehtabjagdey:<password>@cluster0.nbxdb2p.mongodb.net/?retryWrites=true&w=majority"
